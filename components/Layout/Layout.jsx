@@ -1,12 +1,14 @@
 import React from 'react'
-import NavBar from '@components/Navbar/Navbar'
+import NavBar from '@components/Layout/Navbar'
+import Main from '@components/Layout/Main'
+import Footer from '@components/Layout/Footer'
 
 const Layout = ({ children }) => {
   return (
     <div>
       <NavBar />
-      {children}
-      <footer>This is the footer</footer>
+      <Main>{children}</Main>
+      <Footer />
     </div>
   )
 }
