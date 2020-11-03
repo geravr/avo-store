@@ -1,0 +1,16 @@
+.card {
+  width: 20rem;
+  border-radius: 15px;
+  transition: 100ms;
+  cursor: pointer;
+}
+.card:hover {
+  margin-top: -3px;
+  box-shadow: 5px 5px 10px 0px rgba(212, 212, 212, 1);
+}
+.card img {
+  border-radius: 15px 15px 0 0;
+}
+.card div:first-of-type {
+  border-radius: 0 0 15px 15px;
+}
