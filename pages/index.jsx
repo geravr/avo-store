@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
+// Components
+import ProductList from '@components/ProductList/ProductList'
+
 const HomePage = () => {
   const [avocadoList, setAvocadoList] = useState([])
 
@@ -14,9 +17,7 @@ const HomePage = () => {
   return (
     <div>
       <div>Platzi and Next.js!</div>
-      {avocadoList.map((avocado) => (
-        <div>{avocado.image}</div>
-      ))}
+      <ProductList products={avocadoList} />
     </div>
   )
 }
